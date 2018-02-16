@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-11-2017 13:26:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Resoluciones" table="RESOLUCIONES" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idResolucion" type="binary">
+            <column name="ID_RESOLUCION" />
+            <generator class="assigned" />
+        </id>
+        <property name="resolucion" type="string">
+            <column name="RESOLUCION" length="800" not-null="true" />
+        </property>
+        <set name="resolucionesDetalles" table="RESOLUCIONES_DETALLE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RESOLUCIONES_ID_RESOLUCION" not-null="true" />
+            </key>
+            <one-to-many class="Model.ResolucionesDetalle" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PermisosDetalles">
+  <ClassDiagramComponents>
+    <Class name="PermisosDetalles" package="Model" visibility="public" xPosition="-396.0" yPosition="12.0">
+      <Fields>
+        <Field name="idDetallePermiso" type="byte[]" visibility="private"/>
+        <Field name="usuarios" type="Usuarios" visibility="private"/>
+        <Field name="permisos" type="Permisos" visibility="private"/>
+        <Field name="fechaemision" type="Date" visibility="private"/>
+        <Field name="estado" type="BigDecimal" visibility="private"/>
+        <Field name="fechainicio" type="Date" visibility="private"/>
+        <Field name="fechafin" type="Date" visibility="private"/>
+        <Field name="dias" type="BigDecimal" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idDetallePermiso"/>
+          <Argument type="Usuarios" name="usuarios"/>
+          <Argument type="Permisos" name="permisos"/>
+          <Argument type="Date" name="fechaemision"/>
+          <Argument type="BigDecimal" name="estado"/>
+          <Argument type="Date" name="fechainicio"/>
+          <Argument type="Date" name="fechafin"/>
+          <Argument type="BigDecimal" name="dias"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdDetallePermiso" returnType="byte[]" visibility="public"/>
+        <Method name="setIdDetallePermiso" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idDetallePermiso"/>
+        </Method>
+        <Method name="getUsuarios" returnType="Usuarios" visibility="public"/>
+        <Method name="setUsuarios" returnType="void" visibility="public">
+          <Argument type="Usuarios" name="usuarios"/>
+        </Method>
+        <Method name="getPermisos" returnType="Permisos" visibility="public"/>
+        <Method name="setPermisos" returnType="void" visibility="public">
+          <Argument type="Permisos" name="permisos"/>
+        </Method>
+        <Method name="getFechaemision" returnType="Date" visibility="public"/>
+        <Method name="setFechaemision" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaemision"/>
+        </Method>
+        <Method name="getEstado" returnType="BigDecimal" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="estado"/>
+        </Method>
+        <Method name="getFechainicio" returnType="Date" visibility="public"/>
+        <Method name="setFechainicio" returnType="void" visibility="public">
+          <Argument type="Date" name="fechainicio"/>
+        </Method>
+        <Method name="getFechafin" returnType="Date" visibility="public"/>
+        <Method name="setFechafin" returnType="void" visibility="public">
+          <Argument type="Date" name="fechafin"/>
+        </Method>
+        <Method name="getDias" returnType="BigDecimal" visibility="public"/>
+        <Method name="setDias" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="dias"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

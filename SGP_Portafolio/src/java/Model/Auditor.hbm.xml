@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-11-2017 13:26:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Auditor" table="AUDITOR" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idAud" type="binary">
+            <column name="ID_AUD" />
+            <generator class="assigned" />
+        </id>
+        <property name="fechaincidencia" type="date">
+            <column name="FECHAINCIDENCIA" length="7" not-null="true" />
+        </property>
+        <property name="usuarioautor" type="string">
+            <column name="USUARIOAUTOR" length="60" not-null="true" />
+        </property>
+        <property name="detalleconsulta" type="string">
+            <column name="DETALLECONSULTA" length="800" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

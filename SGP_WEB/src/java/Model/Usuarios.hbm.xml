@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-10-2017 13:36:16 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Usuarios" table="USUARIOS" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idUsuario" type="binary">
+            <column name="ID_USUARIO" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="unidades" class="Model.Unidades" fetch="select">
+            <column name="UNIDADES_ID_UNIDAD" not-null="true" />
+        </many-to-one>
+        <many-to-one name="perfiles" class="Model.Perfiles" fetch="select">
+            <column name="PERFILES_ID_PERFIL" not-null="true" />
+        </many-to-one>
+        <property name="email" type="string">
+            <column name="EMAIL" length="128" not-null="true" />
+        </property>
+        <property name="contrasena" type="string">
+            <column name="CONTRASENA" length="32" not-null="true" />
+        </property>
+        <property name="rut" type="string">
+            <column name="RUT" length="30" not-null="true" />
+        </property>
+        <set name="permisoses" table="PERMISOS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USUARIOS_ID_USUARIO" not-null="true" />
+            </key>
+            <one-to-many class="Model.Permisos" />
+        </set>
+        <set name="permisosDetalleses" table="PERMISOS_DETALLES" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USUARIOS_ID_USUARIO" not-null="true" />
+            </key>
+            <one-to-many class="Model.PermisosDetalles" />
+        </set>
+    </class>
+</hibernate-mapping>

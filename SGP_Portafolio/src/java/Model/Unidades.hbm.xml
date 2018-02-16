@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-11-2017 13:26:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Unidades" table="UNIDADES" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idUnidad" type="binary">
+            <column name="ID_UNIDAD" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreunidad" type="string">
+            <column name="NOMBREUNIDAD" length="400" not-null="true" />
+        </property>
+        <property name="eliminado" type="big_decimal">
+            <column name="ELIMINADO" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="usuarioses" table="USUARIOS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="UNIDADES_ID_UNIDAD" not-null="true" />
+            </key>
+            <one-to-many class="Model.Usuarios" />
+        </set>
+    </class>
+</hibernate-mapping>

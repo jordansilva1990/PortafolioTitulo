@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Usuarios">
+  <ClassDiagramComponents>
+    <Class name="Usuarios" package="Model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="idUsuario" type="byte[]" visibility="private"/>
+        <Field name="unidades" type="Unidades" visibility="private"/>
+        <Field name="perfiles" type="Perfiles" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="contrasena" type="String" visibility="private"/>
+        <Field name="rut" type="String" visibility="private"/>
+        <Field name="permisoses" type="Set" visibility="private"/>
+        <Field name="permisosDetalleses" type="Set" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idUsuario"/>
+          <Argument type="Unidades" name="unidades"/>
+          <Argument type="Perfiles" name="perfiles"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="contrasena"/>
+          <Argument type="String" name="rut"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idUsuario"/>
+          <Argument type="Unidades" name="unidades"/>
+          <Argument type="Perfiles" name="perfiles"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="contrasena"/>
+          <Argument type="String" name="rut"/>
+          <Argument type="Set" name="permisoses"/>
+          <Argument type="Set" name="permisosDetalleses"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdUsuario" returnType="byte[]" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idUsuario"/>
+        </Method>
+        <Method name="getUnidades" returnType="Unidades" visibility="public"/>
+        <Method name="setUnidades" returnType="void" visibility="public">
+          <Argument type="Unidades" name="unidades"/>
+        </Method>
+        <Method name="getPerfiles" returnType="Perfiles" visibility="public"/>
+        <Method name="setPerfiles" returnType="void" visibility="public">
+          <Argument type="Perfiles" name="perfiles"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getContrasena" returnType="String" visibility="public"/>
+        <Method name="setContrasena" returnType="void" visibility="public">
+          <Argument type="String" name="contrasena"/>
+        </Method>
+        <Method name="getRut" returnType="String" visibility="public"/>
+        <Method name="setRut" returnType="void" visibility="public">
+          <Argument type="String" name="rut"/>
+        </Method>
+        <Method name="getPermisoses" returnType="Set" visibility="public"/>
+        <Method name="setPermisoses" returnType="void" visibility="public">
+          <Argument type="Set" name="permisoses"/>
+        </Method>
+        <Method name="getPermisosDetalleses" returnType="Set" visibility="public"/>
+        <Method name="setPermisosDetalleses" returnType="void" visibility="public">
+          <Argument type="Set" name="permisosDetalleses"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

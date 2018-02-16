@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TiposPermisos">
+  <ClassDiagramComponents>
+    <Class name="TiposPermisos" package="Model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="idTipoPermiso" type="byte[]" visibility="private"/>
+        <Field name="detallepermiso" type="String" visibility="private"/>
+        <Field name="diasafectos" type="BigDecimal" visibility="private"/>
+        <Field name="permisoses" type="Set" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idTipoPermiso"/>
+          <Argument type="String" name="detallepermiso"/>
+          <Argument type="BigDecimal" name="diasafectos"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idTipoPermiso"/>
+          <Argument type="String" name="detallepermiso"/>
+          <Argument type="BigDecimal" name="diasafectos"/>
+          <Argument type="Set" name="permisoses"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdTipoPermiso" returnType="byte[]" visibility="public"/>
+        <Method name="setIdTipoPermiso" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idTipoPermiso"/>
+        </Method>
+        <Method name="getDetallepermiso" returnType="String" visibility="public"/>
+        <Method name="setDetallepermiso" returnType="void" visibility="public">
+          <Argument type="String" name="detallepermiso"/>
+        </Method>
+        <Method name="getDiasafectos" returnType="BigDecimal" visibility="public"/>
+        <Method name="setDiasafectos" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="diasafectos"/>
+        </Method>
+        <Method name="getPermisoses" returnType="Set" visibility="public"/>
+        <Method name="setPermisoses" returnType="void" visibility="public">
+          <Argument type="Set" name="permisoses"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

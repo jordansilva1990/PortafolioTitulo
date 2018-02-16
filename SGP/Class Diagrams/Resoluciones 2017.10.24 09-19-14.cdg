@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Resoluciones">
+  <ClassDiagramComponents>
+    <Class name="Resoluciones" package="Model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="idResolucion" type="byte[]" visibility="private"/>
+        <Field name="resolucion" type="String" visibility="private"/>
+        <Field name="resolucionesDetalles" type="Set" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idResolucion"/>
+          <Argument type="String" name="resolucion"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idResolucion"/>
+          <Argument type="String" name="resolucion"/>
+          <Argument type="Set" name="resolucionesDetalles"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdResolucion" returnType="byte[]" visibility="public"/>
+        <Method name="setIdResolucion" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idResolucion"/>
+        </Method>
+        <Method name="getResolucion" returnType="String" visibility="public"/>
+        <Method name="setResolucion" returnType="void" visibility="public">
+          <Argument type="String" name="resolucion"/>
+        </Method>
+        <Method name="getResolucionesDetalles" returnType="Set" visibility="public"/>
+        <Method name="setResolucionesDetalles" returnType="void" visibility="public">
+          <Argument type="Set" name="resolucionesDetalles"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

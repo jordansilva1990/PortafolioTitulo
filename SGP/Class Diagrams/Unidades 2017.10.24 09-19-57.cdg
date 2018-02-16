@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Unidades">
+  <ClassDiagramComponents>
+    <Class name="Unidades" package="Model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="idUnidad" type="byte[]" visibility="private"/>
+        <Field name="nombreunidad" type="String" visibility="private"/>
+        <Field name="usuarioses" type="Set" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idUnidad"/>
+          <Argument type="String" name="nombreunidad"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idUnidad"/>
+          <Argument type="String" name="nombreunidad"/>
+          <Argument type="Set" name="usuarioses"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdUnidad" returnType="byte[]" visibility="public"/>
+        <Method name="setIdUnidad" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idUnidad"/>
+        </Method>
+        <Method name="getNombreunidad" returnType="String" visibility="public"/>
+        <Method name="setNombreunidad" returnType="void" visibility="public">
+          <Argument type="String" name="nombreunidad"/>
+        </Method>
+        <Method name="getUsuarioses" returnType="Set" visibility="public"/>
+        <Method name="setUsuarioses" returnType="void" visibility="public">
+          <Argument type="Set" name="usuarioses"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

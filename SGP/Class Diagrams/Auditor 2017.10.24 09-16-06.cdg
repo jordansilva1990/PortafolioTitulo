@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Auditor">
+  <ClassDiagramComponents>
+    <Class name="Auditor" package="Model" visibility="public" xPosition="17.0" yPosition="8.0">
+      <Fields>
+        <Field name="idAud" type="byte[]" visibility="private"/>
+        <Field name="fechaincidencia" type="Date" visibility="private"/>
+        <Field name="usuarioautor" type="String" visibility="private"/>
+        <Field name="detalleconsulta" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idAud"/>
+          <Argument type="Date" name="fechaincidencia"/>
+          <Argument type="String" name="usuarioautor"/>
+          <Argument type="String" name="detalleconsulta"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdAud" returnType="byte[]" visibility="public"/>
+        <Method name="setIdAud" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idAud"/>
+        </Method>
+        <Method name="getFechaincidencia" returnType="Date" visibility="public"/>
+        <Method name="setFechaincidencia" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaincidencia"/>
+        </Method>
+        <Method name="getUsuarioautor" returnType="String" visibility="public"/>
+        <Method name="setUsuarioautor" returnType="void" visibility="public">
+          <Argument type="String" name="usuarioautor"/>
+        </Method>
+        <Method name="getDetalleconsulta" returnType="String" visibility="public"/>
+        <Method name="setDetalleconsulta" returnType="void" visibility="public">
+          <Argument type="String" name="detalleconsulta"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

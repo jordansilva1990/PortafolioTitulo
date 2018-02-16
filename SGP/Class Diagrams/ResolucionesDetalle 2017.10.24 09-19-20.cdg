@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ResolucionesDetalle">
+  <ClassDiagramComponents>
+    <Class name="ResolucionesDetalle" package="Model" visibility="public" xPosition="-323.0" yPosition="33.0">
+      <Fields>
+        <Field name="idDetalleResolucion" type="byte[]" visibility="private"/>
+        <Field name="resoluciones" type="Resoluciones" visibility="private"/>
+        <Field name="permisos" type="Permisos" visibility="private"/>
+        <Field name="justificacion" type="String" visibility="private"/>
+        <Field name="recursolegalafecto" type="BigDecimal" visibility="private"/>
+        <Field name="fechaemision" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idDetalleResolucion"/>
+          <Argument type="Resoluciones" name="resoluciones"/>
+          <Argument type="Permisos" name="permisos"/>
+          <Argument type="String" name="justificacion"/>
+          <Argument type="Date" name="fechaemision"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idDetalleResolucion"/>
+          <Argument type="Resoluciones" name="resoluciones"/>
+          <Argument type="Permisos" name="permisos"/>
+          <Argument type="String" name="justificacion"/>
+          <Argument type="BigDecimal" name="recursolegalafecto"/>
+          <Argument type="Date" name="fechaemision"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdDetalleResolucion" returnType="byte[]" visibility="public"/>
+        <Method name="setIdDetalleResolucion" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idDetalleResolucion"/>
+        </Method>
+        <Method name="getResoluciones" returnType="Resoluciones" visibility="public"/>
+        <Method name="setResoluciones" returnType="void" visibility="public">
+          <Argument type="Resoluciones" name="resoluciones"/>
+        </Method>
+        <Method name="getPermisos" returnType="Permisos" visibility="public"/>
+        <Method name="setPermisos" returnType="void" visibility="public">
+          <Argument type="Permisos" name="permisos"/>
+        </Method>
+        <Method name="getJustificacion" returnType="String" visibility="public"/>
+        <Method name="setJustificacion" returnType="void" visibility="public">
+          <Argument type="String" name="justificacion"/>
+        </Method>
+        <Method name="getRecursolegalafecto" returnType="BigDecimal" visibility="public"/>
+        <Method name="setRecursolegalafecto" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="recursolegalafecto"/>
+        </Method>
+        <Method name="getFechaemision" returnType="Date" visibility="public"/>
+        <Method name="setFechaemision" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaemision"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

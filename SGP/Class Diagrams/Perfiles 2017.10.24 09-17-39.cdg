@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Perfiles">
+  <ClassDiagramComponents>
+    <Class name="Perfiles" package="Model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="idPerfil" type="byte[]" visibility="private"/>
+        <Field name="nombreperfil" type="String" visibility="private"/>
+        <Field name="crudTiposAuth" type="BigDecimal" visibility="private"/>
+        <Field name="crudMotivosAuth" type="BigDecimal" visibility="private"/>
+        <Field name="crudUnidadesAuth" type="BigDecimal" visibility="private"/>
+        <Field name="genPermisosAuth" type="BigDecimal" visibility="private"/>
+        <Field name="genResolucionesAuth" type="BigDecimal" visibility="private"/>
+        <Field name="authPermisosAuth" type="BigDecimal" visibility="private"/>
+        <Field name="qryPermisosAuth" type="BigDecimal" visibility="private"/>
+        <Field name="qryResolucionesAuth" type="BigDecimal" visibility="private"/>
+        <Field name="verDocumentosAuth" type="BigDecimal" visibility="private"/>
+        <Field name="dowDocumentosAuth" type="BigDecimal" visibility="private"/>
+        <Field name="genReportesAuth" type="BigDecimal" visibility="private"/>
+        <Field name="usuarioses" type="Set" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idPerfil"/>
+          <Argument type="String" name="nombreperfil"/>
+          <Argument type="BigDecimal" name="crudTiposAuth"/>
+          <Argument type="BigDecimal" name="crudMotivosAuth"/>
+          <Argument type="BigDecimal" name="crudUnidadesAuth"/>
+          <Argument type="BigDecimal" name="genPermisosAuth"/>
+          <Argument type="BigDecimal" name="genResolucionesAuth"/>
+          <Argument type="BigDecimal" name="authPermisosAuth"/>
+          <Argument type="BigDecimal" name="qryPermisosAuth"/>
+          <Argument type="BigDecimal" name="qryResolucionesAuth"/>
+          <Argument type="BigDecimal" name="verDocumentosAuth"/>
+          <Argument type="BigDecimal" name="dowDocumentosAuth"/>
+          <Argument type="BigDecimal" name="genReportesAuth"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idPerfil"/>
+          <Argument type="String" name="nombreperfil"/>
+          <Argument type="BigDecimal" name="crudTiposAuth"/>
+          <Argument type="BigDecimal" name="crudMotivosAuth"/>
+          <Argument type="BigDecimal" name="crudUnidadesAuth"/>
+          <Argument type="BigDecimal" name="genPermisosAuth"/>
+          <Argument type="BigDecimal" name="genResolucionesAuth"/>
+          <Argument type="BigDecimal" name="authPermisosAuth"/>
+          <Argument type="BigDecimal" name="qryPermisosAuth"/>
+          <Argument type="BigDecimal" name="qryResolucionesAuth"/>
+          <Argument type="BigDecimal" name="verDocumentosAuth"/>
+          <Argument type="BigDecimal" name="dowDocumentosAuth"/>
+          <Argument type="BigDecimal" name="genReportesAuth"/>
+          <Argument type="Set" name="usuarioses"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdPerfil" returnType="byte[]" visibility="public"/>
+        <Method name="setIdPerfil" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idPerfil"/>
+        </Method>
+        <Method name="getNombreperfil" returnType="String" visibility="public"/>
+        <Method name="setNombreperfil" returnType="void" visibility="public">
+          <Argument type="String" name="nombreperfil"/>
+        </Method>
+        <Method name="getCrudTiposAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setCrudTiposAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="crudTiposAuth"/>
+        </Method>
+        <Method name="getCrudMotivosAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setCrudMotivosAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="crudMotivosAuth"/>
+        </Method>
+        <Method name="getCrudUnidadesAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setCrudUnidadesAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="crudUnidadesAuth"/>
+        </Method>
+        <Method name="getGenPermisosAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setGenPermisosAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="genPermisosAuth"/>
+        </Method>
+        <Method name="getGenResolucionesAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setGenResolucionesAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="genResolucionesAuth"/>
+        </Method>
+        <Method name="getAuthPermisosAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setAuthPermisosAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="authPermisosAuth"/>
+        </Method>
+        <Method name="getQryPermisosAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setQryPermisosAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="qryPermisosAuth"/>
+        </Method>
+        <Method name="getQryResolucionesAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setQryResolucionesAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="qryResolucionesAuth"/>
+        </Method>
+        <Method name="getVerDocumentosAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setVerDocumentosAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="verDocumentosAuth"/>
+        </Method>
+        <Method name="getDowDocumentosAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setDowDocumentosAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="dowDocumentosAuth"/>
+        </Method>
+        <Method name="getGenReportesAuth" returnType="BigDecimal" visibility="public"/>
+        <Method name="setGenReportesAuth" returnType="void" visibility="public">
+          <Argument type="BigDecimal" name="genReportesAuth"/>
+        </Method>
+        <Method name="getUsuarioses" returnType="Set" visibility="public"/>
+        <Method name="setUsuarioses" returnType="void" visibility="public">
+          <Argument type="Set" name="usuarioses"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

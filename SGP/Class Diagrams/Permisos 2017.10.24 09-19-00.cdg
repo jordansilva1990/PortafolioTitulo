@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Permisos">
+  <ClassDiagramComponents>
+    <Class name="Permisos" package="Model" visibility="public" xPosition="-358.0" yPosition="13.0">
+      <Fields>
+        <Field name="idPermiso" type="byte[]" visibility="private"/>
+        <Field name="usuarios" type="Usuarios" visibility="private"/>
+        <Field name="tiposPermisos" type="TiposPermisos" visibility="private"/>
+        <Field name="recursolegal" type="String" visibility="private"/>
+        <Field name="tipopermiso" type="String" visibility="private"/>
+        <Field name="fecha" type="Date" visibility="private"/>
+        <Field name="resolucionesDetalles" type="Set" visibility="private"/>
+        <Field name="permisosDetalleses" type="Set" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idPermiso"/>
+          <Argument type="Usuarios" name="usuarios"/>
+          <Argument type="TiposPermisos" name="tiposPermisos"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="byte[]" name="idPermiso"/>
+          <Argument type="Usuarios" name="usuarios"/>
+          <Argument type="TiposPermisos" name="tiposPermisos"/>
+          <Argument type="String" name="recursolegal"/>
+          <Argument type="String" name="tipopermiso"/>
+          <Argument type="Date" name="fecha"/>
+          <Argument type="Set" name="resolucionesDetalles"/>
+          <Argument type="Set" name="permisosDetalleses"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdPermiso" returnType="byte[]" visibility="public"/>
+        <Method name="setIdPermiso" returnType="void" visibility="public">
+          <Argument type="byte[]" name="idPermiso"/>
+        </Method>
+        <Method name="getUsuarios" returnType="Usuarios" visibility="public"/>
+        <Method name="setUsuarios" returnType="void" visibility="public">
+          <Argument type="Usuarios" name="usuarios"/>
+        </Method>
+        <Method name="getTiposPermisos" returnType="TiposPermisos" visibility="public"/>
+        <Method name="setTiposPermisos" returnType="void" visibility="public">
+          <Argument type="TiposPermisos" name="tiposPermisos"/>
+        </Method>
+        <Method name="getRecursolegal" returnType="String" visibility="public"/>
+        <Method name="setRecursolegal" returnType="void" visibility="public">
+          <Argument type="String" name="recursolegal"/>
+        </Method>
+        <Method name="getTipopermiso" returnType="String" visibility="public"/>
+        <Method name="setTipopermiso" returnType="void" visibility="public">
+          <Argument type="String" name="tipopermiso"/>
+        </Method>
+        <Method name="getFecha" returnType="Date" visibility="public"/>
+        <Method name="setFecha" returnType="void" visibility="public">
+          <Argument type="Date" name="fecha"/>
+        </Method>
+        <Method name="getResolucionesDetalles" returnType="Set" visibility="public"/>
+        <Method name="setResolucionesDetalles" returnType="void" visibility="public">
+          <Argument type="Set" name="resolucionesDetalles"/>
+        </Method>
+        <Method name="getPermisosDetalleses" returnType="Set" visibility="public"/>
+        <Method name="setPermisosDetalleses" returnType="void" visibility="public">
+          <Argument type="Set" name="permisosDetalleses"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

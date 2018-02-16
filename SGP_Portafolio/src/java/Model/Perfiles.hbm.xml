@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-11-2017 13:26:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Perfiles" table="PERFILES" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idPerfil" type="binary">
+            <column name="ID_PERFIL" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreperfil" type="string">
+            <column name="NOMBREPERFIL" length="60" not-null="true" />
+        </property>
+        <property name="crudTiposAuth" type="big_decimal">
+            <column name="CRUD_TIPOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="crudMotivosAuth" type="big_decimal">
+            <column name="CRUD_MOTIVOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="crudUnidadesAuth" type="big_decimal">
+            <column name="CRUD_UNIDADES_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="genPermisosAuth" type="big_decimal">
+            <column name="GEN_PERMISOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="genResolucionesAuth" type="big_decimal">
+            <column name="GEN_RESOLUCIONES_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="authPermisosAuth" type="big_decimal">
+            <column name="AUTH_PERMISOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="qryPermisosAuth" type="big_decimal">
+            <column name="QRY_PERMISOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="qryResolucionesAuth" type="big_decimal">
+            <column name="QRY_RESOLUCIONES_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="verDocumentosAuth" type="big_decimal">
+            <column name="VER_DOCUMENTOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dowDocumentosAuth" type="big_decimal">
+            <column name="DOW_DOCUMENTOS_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="genReportesAuth" type="big_decimal">
+            <column name="GEN_REPORTES_AUTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="usuarioses" table="USUARIOS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PERFILES_ID_PERFIL" not-null="true" />
+            </key>
+            <one-to-many class="Model.Usuarios" />
+        </set>
+    </class>
+</hibernate-mapping>

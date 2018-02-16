@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-11-2017 13:26:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.ResolucionesDetalle" table="RESOLUCIONES_DETALLE" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idDetalleResolucion" type="binary">
+            <column name="ID_DETALLE_RESOLUCION" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="resoluciones" class="Model.Resoluciones" fetch="select">
+            <column name="RESOLUCIONES_ID_RESOLUCION" not-null="true" />
+        </many-to-one>
+        <many-to-one name="permisos" class="Model.Permisos" fetch="select">
+            <column name="PERMISOS_ID_PERMISO" not-null="true" />
+        </many-to-one>
+        <property name="justificacion" type="string">
+            <column name="JUSTIFICACION" length="800" not-null="true" />
+        </property>
+        <property name="recursolegalafecto" type="big_decimal">
+            <column name="RECURSOLEGALAFECTO" precision="22" scale="0" />
+        </property>
+        <property name="fechaemision" type="date">
+            <column name="FECHAEMISION" length="7" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

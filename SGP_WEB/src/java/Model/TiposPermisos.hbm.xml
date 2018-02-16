@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-10-2017 13:36:16 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.TiposPermisos" table="TIPOS_PERMISOS" schema="ADMINISTRADOR" optimistic-lock="version">
+        <id name="idTipoPermiso" type="binary">
+            <column name="ID_TIPO_PERMISO" />
+            <generator class="assigned" />
+        </id>
+        <property name="detallepermiso" type="string">
+            <column name="DETALLEPERMISO" length="140" not-null="true" />
+        </property>
+        <property name="diasafectos" type="big_decimal">
+            <column name="DIASAFECTOS" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="permisoses" table="PERMISOS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_TIPO_PERMISO" not-null="true" />
+            </key>
+            <one-to-many class="Model.Permisos" />
+        </set>
+    </class>
+</hibernate-mapping>
